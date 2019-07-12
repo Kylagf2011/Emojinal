@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let emojis = ["🙄" : "Sarcastic eye roll", "🙃" : "Punny person"]
+    let emojis = ["🙄" : "Sarcastic eye-roll", "🙃" : "Upside down face"]
+    
+    var customMessages = ["Sarcastic eye-roll" : ["Well, that worked.", "Good job.", "Maybe if you tried again."], "Upside down face" : ["Bee amazing!", "Purrfect!", "Doughnut give up!"] ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,10 @@ class ViewController: UIViewController {
         //Get messages to show up in a random order when the button is pressed
         
         let selectedEmotion = sender.titleLabel?.text
-
-        let alertController = UIAlertController(title: "Good Work", message: "\(emojis.values)", preferredStyle: UIAlertController.Style.alert)
+        
+        let emojiMessage = customMessages[emojis[selectedEmotion!]!]?[Int.random(in: 0 ... 2)]
+        
+        let alertController = UIAlertController(title: "Good Work", message: "\(emojiMessage!)", preferredStyle: UIAlertController.Style.alert)
         
         alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         

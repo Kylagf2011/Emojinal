@@ -24,7 +24,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                 <state key="normal" title="🙄"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWb-1k-cXv"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cim-Mh-Ajg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMd-cZ-RpB">
@@ -33,7 +33,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                 <state key="normal" title="🙃"/>
                                 <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyC-rU-bnV"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bd0-Jm-pJ8"/>
                                 </connections>
                             </button>
                         </subviews>
